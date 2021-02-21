@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+Route::get('/', function () {
+    return view('index');
+})->name('main');
+
+Route::get('/coffee', function () {
+    return view('second_page');
+})->name('coffee');
+Route::get('/order_online', function () {
+    return view('third_page');
+})->name('order');
+Route::get('/contacts', function () {
+    return view('fourth_page');
+})->name('contacts');
