@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Models\Client;
+use App\Models\post;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,3 +44,15 @@ Route::get('client', function(){
     $client = Client::find(1);
     return $client->surname;
 });
+
+Route::get('/post/create', function () {
+    DB::table('post')->insert([
+        'title' => 'The just Title',
+        'body' => 'the just body'
+    ]);  
+});
+
+Route::get('/post', function () {
+    $post = post::find(1);
+    return $post->title;
+}); 
