@@ -47,8 +47,8 @@ Route::get('client', function(){
 
 Route::get('/post/create', function () {
     DB::table('post')->insert([
-        'title' => 'The just Title',
-        'body' => 'the just body'
+        'title' => 'The  Title3',
+        'body' => 'the  body 4'
     ]);  
 });
 
