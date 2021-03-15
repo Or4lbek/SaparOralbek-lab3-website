@@ -32,6 +32,6 @@ class PostTest extends TestCase
 
     public function test_post_response(){
         $response = $this->get('/post/1');
-        $response->assertViewHas('client');
+        $response->assertViewHas('post');
     }
 }
