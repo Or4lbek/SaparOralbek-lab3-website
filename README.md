@@ -10,3 +10,8 @@ lab 5
 ![image](https://user-images.githubusercontent.com/72996538/110239343-87133f80-7f57-11eb-881c-601a6058ebcd.png)
 
 ![image](https://user-images.githubusercontent.com/72996538/110239365-a01bf080-7f57-11eb-8979-fe9d27b667cd.png)
+
+
+lab 6
+
+![image](https://user-images.githubusercontent.com/72996538/111159098-c8d06580-85a9-11eb-80c9-ef2143ef7885.PNG)
