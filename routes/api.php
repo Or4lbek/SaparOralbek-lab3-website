@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/posts', [ApiController::class, 'index']);
+
+Route::post('/posts/details', [ApiController::class, 'get_post']);// post_id =>

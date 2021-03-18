@@ -12,4 +12,15 @@ class ApiController extends Controller
 
         return response($posts, 200);
     }//this function returns thal all client rows
+
+    //return post with id
+    public function get_post(Request $request){
+        $posts = post::find($request->post_id);
+
+        if($posts == null){
+            return response(['message' => 'There is no post'], 404);
+        }
+
+        return response($posts, 200);
+    }
 }
