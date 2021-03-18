@@ -15,3 +15,13 @@ lab 5
 lab 6
 
 ![image](https://user-images.githubusercontent.com/72996538/111159098-c8d06580-85a9-11eb-80c9-ef2143ef7885.PNG)
+
+lab 7
+
+![image](https://user-images.githubusercontent.com/72996538/111659447-4dc3b500-881e-11eb-8180-cdba16078ce5.PNG)
+
+![image](https://user-images.githubusercontent.com/72996538/111659515-5c11d100-881e-11eb-91da-ce3870c037ff.PNG)
+
+![image](https://user-images.githubusercontent.com/72996538/111659571-67fd9300-881e-11eb-8fcd-65b1c11860c1.PNG)
+
+
