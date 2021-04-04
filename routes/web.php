@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Client;
 use App\Models\post;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PersonsController;
+use App\Mail\WelcomeMail;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\UploadController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,3 +64,19 @@ Route::get('/blog/create', function(){
 Route::post('/blog/create', [BlogController::class, 'store'])->name('add-blog');        
 
 Route::get('/post/{id}', [BlogController::class, 'get_post']);
+
+Route::get('/email', function () {
+
+    Mail::to('email@email.com')->send(new WelcomeMail());
+
+    return new WelcomeMail();
+});
+
+/*Route::get('upload', function () {
+    return view('upload');
+});*/
+Route:: view('/upload', 'upload');
+
+Route::post('/upload',[UploadController::class, 'index']); 
+
+Route::get('/persons', [PersonsController::class, 'index']); 
