@@ -15,19 +15,19 @@ class UploadController extends Controller
         $allowedFileExtensions = ['png','jpg'];
         $file = $req->file('file');
         $extension = $file->getClientOriginalExtension();
-        $check = in_array($extension, $allowedFileExtensions);
+        $test = in_array($extension, $allowedFileExtensions);
 
-        if($check) {
+        if($test) {
             Person::create([
                 'name' => $req->name,
                 'surname' => $req->surname,
                 'email' => $req->email,
                 'image' => $req->file
             ]);
-            $file->store('files');
+            $file->store('files');  
             
             Mail::to($req->email)->send(new WelcomeMail());
-            return 'successfully added';
+            return view('index');
         }
         return 'failed to upload';
     }

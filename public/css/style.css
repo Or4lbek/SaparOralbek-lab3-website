@@ -1,0 +1,46 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	
+	background-color: #EADC68; 
+}
+.header{
+	display: flex;
+	justify-content: space-around;
+	
+	align-items: center;
+	background-color: #EADC68;
+	padding: 10px 200px;
+	font-size: 25px;
+	color: #A5292A;
+	font-family: 'Fredoka One', cursive;
+
+}
+#Order_online,#Home,#About_us, #Contacts, #Coffee{
+	cursor: pointer;
+}
+.main{
+	display: flex;
+	justify-content: space-around;
+}.main img{
+	padding-top: 90px;
+	margin-left: 40px;
+}
+.text{
+	padding-top: 36px;
+	text-align: center;
+}
+.text p{
+	padding-left: 50px;
+	padding-right: 30px;
+	font-size: 28px;
+	text-align: justify;
+	
+}
+.text h1{
+	font-size: 80px;
+	text-align: left;
+	padding-left: 50px;
+}
+
