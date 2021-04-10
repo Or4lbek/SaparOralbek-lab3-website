@@ -9,9 +9,9 @@
 <body onload="load()">
 	<div class="header">
         <div id="Home" onclick="window.location.reload()"><a href="{{ route('main')}}"><img id="homec" src="{{asset('images/coffee-312521_1280.webp')}}" width="50px" onmouseover = "bigc(this)" onmouseover = "big(this)" onmouseout="smallc(this)"></a> </div>
-        <div id="Coffee" onmouseover = "big(this)" onmouseout="def(this)"><a href = "{{ route('coffee')}}">Coffee</a></div>
-        <div id="Order_online" onclick = "change(this)" onmouseover = "big(this)" onmouseout="def(this)" ><a href = "{{ route('order')}}">Order online</a></div>
-        <div id="Contacts" onclick = "change(this)" onmouseover = "big(this)" onmouseout="def(this)"><a href = "{{ route('contacts')}}">Contacts</a></div>
+        <div id="Coffee" onmouseover = "big(this)" onmouseout="def(this)"><a href = "{{ route('coffee')}}">{{__('second_page.coffee_h')}}</a></div>
+        <div id="Order_online" onclick = "change(this)" onmouseover = "big(this)" onmouseout="def(this)" ><a href = "{{ route('order')}}">{{__('second_page.order_o_h')}}</a></div>
+        <div id="Contacts" onclick = "change(this)" onmouseover = "big(this)" onmouseout="def(this)"><a href = "{{ route('contacts')}}">{{__('second_page.contacts_h')}}</a></div>
     </div>
    
 
@@ -21,8 +21,8 @@
         </div>
         
         <div class="text" >
-             <h1 id="text1">Coffee</h1>
-              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor  incididunt ut  labore  et  dolore <br> magna aliqua. Ut enim ad  minim  veniam,  quis exercitation<br>  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             <h1 id="text1">{{__('second_page.coffee')}}</h1>
+              <p >{{__('second_page.about_c')}}
         </div>
     </div>
 </body>

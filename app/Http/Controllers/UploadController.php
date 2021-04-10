@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Person;
+use App\Models\post;
 
 class UploadController extends Controller
 {
@@ -22,7 +23,12 @@ class UploadController extends Controller
                 'name' => $req->name,
                 'surname' => $req->surname,
                 'email' => $req->email,
-                'image' => $req->file
+                'image' => $req->file,
+            ]);
+
+            post::create([
+                'title' => $req->name,
+                'body' => $req->surname
             ]);
             $file->store('files');  
             

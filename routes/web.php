@@ -9,6 +9,8 @@ use App\Http\Controllers\PersonsController;
 use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\UploadController;
+use Illuminate\Support\Facades\App;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -80,3 +82,21 @@ Route:: view('/upload', 'upload');
 Route::post('/upload',[UploadController::class, 'index']); 
 
 Route::get('/persons', [PersonsController::class, 'index']); 
+
+Route::get('/{lang}',function($lang){
+    App::setlocale($lang);
+    return view('index');
+});
+Route::get('coffee/{lang}',function($lang){
+    App::setlocale($lang);
+    return view('second_page');
+});
+Route::get('order_online/{lang}',function($lang){
+    App::setlocale($lang);
+    return view('third_page');
+});
+Route::get('contacts/{lang}',function($lang){
+    App::setlocale($lang);
+    return view('fourth_page');
+});
+

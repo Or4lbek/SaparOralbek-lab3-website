@@ -1,7 +1,7 @@
 @component('mail::message')
 # Hello from Oralbek Sapar
 
-Welcome out cool aplication.
+Welcome our cool aplication.
 
 
 
