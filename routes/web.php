@@ -10,6 +10,7 @@ use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\UploadController;
 use Illuminate\Support\Facades\App;
+use App\Http\Controllers\LocalizationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,3 +101,4 @@ Route::get('contacts/{lang}',function($lang){
     return view('fourth_page');
 });
 
+Route::get('/{lang}', [LocalizationController::class,'index']);
