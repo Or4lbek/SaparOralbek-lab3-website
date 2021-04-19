@@ -75,8 +75,6 @@
 	
 	</div>
 
-   
-
     <div class="main">
         <div class="imgmain">
             <img id="img" src="{{url('https://www.freepnglogos.com/uploads/coffee-png/coffee-east-side-deli-ltd-artisan-delicatessen-organic-15.png')}}" alt="cofee" width="420px">
